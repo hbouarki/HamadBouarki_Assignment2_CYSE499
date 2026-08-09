@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+sst2_baseline_checkpoint/
+sst2_finetuned_checkpoint/
