@@ -25,35 +25,51 @@ Confusion matrix:
 ```text
 [[177, 23],
  [  8, 192]]
+```
 
+## Repository Files
 
+- `stage1_notebook.ipynb` - model development, training, and evaluation
+- `model_checkpoint/` - saved final model and tokenizer
+- `public_test_predictions.csv` - predictions for the public test set
+- `train.csv` - provided training data
+- `public_test.csv` - provided public test data
+- `requirements.txt` - required Python packages
+- `README.md` - project instructions
 
- Repository Files
-stage1_notebook.ipynb - model development, training, and evaluation
-model_checkpoint/ - saved final model and tokenizer
-public_test_predictions.csv - predictions for the public test set
-train.csv - provided training data
-public_test.csv - provided public test data
-requirements.txt - required Python packages
-README.md - project instructions
+## How to Run
 
+1. Install Python 3.11 or a compatible Python version.
 
-How to Run
-Install Python 3.11 or a compatible Python version.
-Create a virtual environment:
+2. Create a virtual environment:
+
+```bash
 python -m venv .venv
-Activate the environment on Windows:
+```
+
+3. Activate the environment on Windows:
+
+```powershell
 .venv\Scripts\Activate.ps1
-Install the required packages:
+```
+
+4. Install the required packages:
+
+```bash
 pip install -r requirements.txt
-Open stage1_notebook.ipynb in Jupyter Notebook or Visual Studio Code.
-Run the notebook cells in order.
+```
 
-The saved model can be loaded directly from the model_checkpoint/ folder without retraining.
+5. Open `stage1_notebook.ipynb` in Jupyter Notebook or Visual Studio Code.
 
-Labels
-0 = Negative
-1 = Positive
+6. Run the notebook cells in order.
 
-Use of AI
+The saved model can be loaded directly from the `model_checkpoint/` folder without retraining.
+
+## Labels
+
+- `0` = Negative
+- `1` = Positive
+
+## Use of AI
+
 I used ChatGPT as a support tool to help understand the assignment requirements, organize the notebook, troubleshoot code, and explain model results. I reviewed and ran the code myself and checked the final outputs.
